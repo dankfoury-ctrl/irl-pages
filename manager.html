@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recording at your business — the quick version</title>
+<style>
+  :root{
+    --bg:#0e1116;
+    --card:#171c24;
+    --card-2:#1f2630;
+    --text:#f3f5f8;
+    --muted:#a7b0bd;
+    --accent:#3b82f6;
+    --accent-press:#2f6fd6;
+    --line:#2a323d;
+    --good:#34d399;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.5;}
+  .wrap{max-width:480px;margin:0 auto;padding:24px 20px 56px;}
+  header{padding:8px 0 18px;}
+  .kicker{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 8px;}
+  h1{font-size:25px;line-height:1.22;margin:0 0 12px;font-weight:800;letter-spacing:-.01em;}
+  .lede{font-size:16px;color:var(--muted);margin:0;}
+  h2{font-size:19px;margin:30px 0 10px;font-weight:800;letter-spacing:-.01em;}
+  p{font-size:16px;margin:0 0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;}
+  ul.clean{list-style:none;padding:0;margin:4px 0 0;}
+  ul.clean li{position:relative;padding:10px 0 10px 28px;color:var(--text);font-size:15px;border-bottom:1px solid var(--line);}
+  ul.clean li:last-child{border-bottom:0;}
+  ul.clean li::before{content:"";position:absolute;left:2px;top:16px;width:9px;height:9px;border-radius:50%;background:var(--good);}
+  .note{background:var(--card-2);border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:14px 0;}
+  .note strong{color:var(--text);}
+  /* form */
+  form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:8px;}
+  label{display:block;font-size:14px;font-weight:700;margin:14px 0 6px;}
+  label:first-of-type{margin-top:0;}
+  .req{color:var(--accent);}
+  input[type=text],input[type=tel],input[type=email]{width:100%;background:#0f141b;border:1px solid var(--line);
+    border-radius:12px;padding:13px 14px;color:var(--text);font-size:16px;}
+  input::placeholder{color:#5d6775;}
+  fieldset{border:0;padding:0;margin:14px 0 0;}
+  legend{font-size:14px;font-weight:700;margin-bottom:8px;padding:0;}
+  .opt{display:flex;align-items:center;gap:12px;background:#0f141b;border:1px solid var(--line);
+    border-radius:12px;padding:13px 14px;margin:8px 0;font-size:15px;cursor:pointer;}
+  .opt input{width:20px;height:20px;accent-color:var(--accent);}
+  .btn{display:block;width:100%;text-align:center;background:var(--accent);color:#fff;border:0;
+    text-decoration:none;font-weight:700;font-size:17px;padding:15px 18px;border-radius:14px;margin:18px 0 0;cursor:pointer;}
+  .btn:active{background:var(--accent-press);}
+  .micro{font-size:13px;color:#6c7682;margin:10px 0 0;text-align:center;}
+  footer{margin-top:32px;color:#6c7682;font-size:13px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="kicker">Instawork Robotics Lab</p>
+    <h1>Someone who works here asked to record their shift. Here's exactly what that means.</h1>
+    <p class="lede">Two minutes of reading. No paperwork required.</p>
+  </header>
+
+  <h2>What's happening</h2>
+  <p>One of the people working here takes part in Instawork Robotics Lab &mdash; a program that pays workers to wear a small camera during their shift. The footage is used to teach AI and robots how real work gets done.</p>
+  <p>They've asked for your okay to record while they do their job here. The camera captures their own point of view as they work. It is not a security system and it is not there to monitor your staff or your customers.</p>
+
+  <h2>What you control</h2>
+  <div class="card">
+    <ul class="clean">
+      <li>It only happens if you say yes. Nothing starts without your okay.</li>
+      <li>You decide what's off-limits &mdash; any area, any time. Just tell them.</li>
+      <li>You can ask them to pause or stop on the spot, for any reason.</li>
+      <li>They start and stop the camera themselves while doing their normal work.</li>
+      <li>Nothing is required from you: no equipment, no cost, no setup.</li>
+    </ul>
+  </div>
+
+  <h2>What you might get out of it</h2>
+  <p>Most managers do this simply as a favor to a good worker, and that's completely fine. If recording at a business like yours turns out to be valuable to us, our team may reach out about a paid, more formal partnership later on. Letting us know you're open (below) puts you on our radar first &mdash; but it's optional.</p>
+
+  <h2>Where do you stand?</h2>
+  <p style="color:var(--muted);font-size:15px;">Optional, takes about 20 seconds. The worker can start as soon as you've said yes &mdash; with or without this.</p>
+
+  <form action="https://formspree.io/f/xjgzrllj" method="post">
+    <!-- Hidden field: carries the referring pro's ID from the Branch link so this lead attributes back to them -->
+    <input type="hidden" name="referring_pro" id="referring_pro" value="">
+
+    <label for="biz">Business name <span class="req">*</span></label>
+    <input id="biz" type="text" name="business_name" placeholder="e.g. Sunrise Diner" required>
+
+    <label for="mgr">Your name <span class="req">*</span></label>
+    <input id="mgr" type="text" name="manager_name" placeholder="First and last name" required>
+
+    <label for="phone">Your phone <span class="req">*</span></label>
+    <input id="phone" type="tel" name="manager_phone" placeholder="(555) 555-5555" required>
+
+    <label for="email">Your email <span style="color:#6c7682;font-weight:600;">(optional)</span></label>
+    <input id="email" type="email" name="manager_email" placeholder="you@business.com">
+
+    <fieldset>
+      <legend>Where things stand <span class="req">*</span></legend>
+      <label class="opt"><input type="radio" name="status" value="yes" required> We've already said yes</label>
+      <label class="opt"><input type="radio" name="status" value="open"> Open to it &mdash; happy to talk</label>
+      <label class="opt"><input type="radio" name="status" value="questions"> Have questions first</label>
+    </fieldset>
+
+    <button class="btn" type="submit">Send</button>
+    <p class="micro">We'll only use this to follow up about recording at your business.</p>
+  </form>
+
+  <footer>
+    <p>Instawork Robotics Lab &middot; Powered by Instawork</p>
+  </footer>
+
+</div>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('referring_pro').value = params.get('referring_pro') || '';
+</script>
+</body>
+</html>
