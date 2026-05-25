@@ -39,7 +39,7 @@
   .step p{margin:0;color:var(--muted);font-size:15px;}
   .btn{display:block;width:100%;text-align:center;background:var(--accent);color:#fff;
     text-decoration:none;font-weight:700;font-size:17px;padding:15px 18px;border-radius:14px;
-    margin:8px 0 0;}
+    margin:8px 0 0;cursor:pointer;border:0;}
   .btn:active{background:var(--accent-press);}
   .btn.secondary{background:transparent;border:1px solid var(--accent);color:#cfe0ff;}
   .cta-wrap{margin:10px 0 4px;}
@@ -53,26 +53,31 @@
   footer{margin-top:34px;color:#6c7682;font-size:13px;text-align:center;}
   .pill{display:inline-block;background:var(--card-2);border:1px solid var(--line);
     border-radius:999px;padding:6px 12px;font-size:13px;color:var(--muted);margin:0 6px 6px 0;}
+  /* completion form */
+  form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:8px;}
+  label{display:block;font-size:14px;font-weight:700;margin:14px 0 6px;}
+  label:first-of-type{margin-top:0;}
+  .req{color:var(--accent);}
+  input[type=text],input[type=tel],input[type=email],select{width:100%;background:#0f141b;border:1px solid var(--line);
+    border-radius:12px;padding:13px 14px;color:var(--text);font-size:16px;}
+  input::placeholder{color:#5d6775;}
+  .micro{font-size:13px;color:#6c7682;margin:10px 0 0;text-align:center;}
 </style>
 </head>
 <body>
 <div class="wrap">
-
   <header>
     <p class="kicker">Instawork Robotics Lab</p>
     <h1>Get paid to record what work really looks like.</h1>
     <p class="lede">Someone you know thought you'd be great at this. Here's the whole thing in two minutes.</p>
   </header>
-
   <h2>What is this, plainly?</h2>
   <p>Instawork Robotics Lab (we call it <strong>IRL</strong>) pays people to wear a small camera while they do real work &mdash; in a restaurant, warehouse, store, hotel, and more. The video teaches AI and robots how everyday tasks actually get done.</p>
   <p>You're not performing or acting. You just do your normal work with the camera running.</p>
-
   <div class="card pay">
     <p class="big"><span>$20</span> / hour</p>
     <p style="margin:6px 0 0;color:var(--muted);font-size:15px;">Paid automatically the moment you submit a clip. No approvals, no waiting on anyone to sign off.</p>
   </div>
-
   <h2>How recording works</h2>
   <ul class="clean">
     <li>You record short clips &mdash; <strong>2 minutes minimum, 20 minutes maximum</strong> each.</li>
@@ -81,10 +86,8 @@
     <li>You only record at a workplace after a manager there has said yes.</li>
     <li>Submit your clip in the app &mdash; that's what triggers your pay.</li>
   </ul>
-
   <h2>Get set up in 3 steps</h2>
   <p style="color:var(--muted);font-size:15px;">You can do all of this from home, before your first shift. Takes about 10 minutes.</p>
-
   <div class="step">
     <div class="num">1</div>
     <div>
@@ -93,7 +96,6 @@
       <a class="btn" href="https://www.instawork.com/worker">Create my profile</a>
     </div>
   </div>
-
   <div class="step">
     <div class="num">2</div>
     <div>
@@ -102,7 +104,6 @@
       <a class="btn" href="https://apps.apple.com/us/app/instawork-lens/id6753125272">Download Lens</a>
     </div>
   </div>
-
   <div class="step">
     <div class="num">3</div>
     <div>
@@ -111,10 +112,8 @@
       <p style="background:var(--card-2);border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:15px;color:var(--text);margin:6px 0 0;line-height:1.7;"><strong>Profile</strong> (bottom right) &rarr; <strong>Settings</strong> gear (top right) &rarr; <strong>Payment settings</strong> &rarr; <strong>Add bank account</strong></p>
     </div>
   </div>
-
   <h2>Getting your camera headset</h2>
   <p>The headset is the one thing you can't set up from your couch. Once your profile and bank info are ready, we'll be in touch with exactly how and when you'll get your gear in your area &mdash; so the moment a manager says yes, you're ready to record.</p>
-
   <h2 id="faq">Quick answers</h2>
   <div class="faq">
     <h3>Do I need experience?</h3>
@@ -133,44 +132,35 @@
     <p>You work as an independent contractor and choose when you record. There's no set schedule.</p>
   </div>
   <p style="color:var(--muted);font-size:15px;margin-top:14px;">Still stuck? Text the person who invited you &mdash; they can point you in the right direction.</p>
-
   <div class="cta-wrap" style="margin-top:30px;">
     <a class="btn" href="https://www.instawork.com/worker">Start step 1 &rarr;</a>
     <a class="btn secondary" href="#faq" style="margin-top:10px;">I have a question</a>
   </div>
-
   <footer>
     <p>Instawork Robotics Lab &middot; Powered by Instawork</p>
   </footer>
 <div style="margin-top:40px;border-top:1px solid var(--line);padding-top:32px;">
   <h2>All set up? Let us know</h2>
   <p style="color:var(--muted);font-size:15px;">Once you've completed all three steps above, tap below so we know you're ready to record.</p>
-
   <form action="https://formspree.io/f/xkoebeld" method="POST">
     <input type="hidden" name="referring_pro" id="completion_referring_pro" value="">
-
     <label for="comp_name">Your name <span class="req">*</span></label>
     <input id="comp_name" type="text" name="nominee_name" placeholder="First and last name" required>
-
     <label for="comp_phone">Your phone <span class="req">*</span></label>
     <input id="comp_phone" type="tel" name="nominee_phone" placeholder="(555) 555-5555" required>
-
     <label for="comp_market">Your market <span class="req">*</span></label>
-    <select id="comp_market" name="market" required style="width:100%;background:#0f141b;border:1px solid var(--line);border-radius:12px;padding:13px 14px;color:var(--text);font-size:16px;">
+    <select id="comp_market" name="market" required>
       <option value="" disabled selected>Select your market</option>
       <option value="Dallas">Dallas</option>
       <option value="Las Vegas">Las Vegas</option>
     </select>
-
     <button class="btn" type="submit" style="margin-top:18px;">I'm all set up</button>
     <p class="micro">We'll confirm you're cleared to start recording.</p>
   </form>
 </div>
-
 <script>
   const urlParams = new URLSearchParams(window.location.search);
   const refPro = urlParams.get('referring_pro') || '';
-  document.getElementById('referring_pro') && (document.getElementById('referring_pro').value = refPro);
   document.getElementById('completion_referring_pro').value = refPro;
 </script>
 </div>
