@@ -1,4 +1,3 @@
- · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,9 +51,6 @@
   .faq h3{font-size:16px;margin:0 0 6px;font-weight:700;}
   .faq p{color:var(--muted);font-size:15px;margin:0 0 4px;}
   footer{margin-top:34px;color:#6c7682;font-size:13px;text-align:center;}
-  .pill{display:inline-block;background:var(--card-2);border:1px solid var(--line);
-    border-radius:999px;padding:6px 12px;font-size:13px;color:var(--muted);margin:0 6px 6px 0;}
-  /* completion form */
   form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:8px;}
   label{display:block;font-size:14px;font-weight:700;margin:14px 0 6px;}
   label:first-of-type{margin-top:0;}
@@ -77,15 +73,17 @@
   <p>You're not performing or acting. You just do your normal work with the headset camera running.</p>
   <div class="card pay">
     <p class="big"><span>$20</span> / hour</p>
-    <p style="margin:6px 0 0;color:var(--muted);font-size:15px;">Submit your clip, we run a quick quality check, and $20 for every hour of usable footage lands in your account &mdash; in days, not weeks.</p>
+    <p style="margin:6px 0 0;color:var(--muted);font-size:15px;">Submit your video, we run a quick quality check, and $20 for every hour of usable footage lands in your account &mdash; in days, not weeks.</p>
   </div>
   <h2>How recording works</h2>
   <ul class="clean">
-    <li>You record short clips &mdash; <strong>2 minutes minimum, 20 minutes maximum</strong> each.</li>
-    <li>When a clip hits 20 minutes, you simply start a fresh one and keep going.</li>
+    <li>You record short videos &mdash; <strong>2 minutes minimum, 20 minutes maximum</strong> each.</li>
+    <li>When a video hits 20 minutes, you simply start a fresh one and keep going.</li>
     <li>You start and stop recording yourself. You're always in control of the camera.</li>
     <li>You only record at a workplace after a manager there has said yes.</li>
-    <li>Submit your clip in the app &mdash; once it clears a quick quality check, payment lands in your account.</li>
+    <li><strong>Active physical work only</strong> &mdash; cooking, stocking, cleaning, packing, building, handling materials. Videos must show hands-on task work to qualify for payment.</li>
+    <li>Driving, sitting, standing idle, or watching others work does <strong>not</strong> qualify &mdash; the camera needs to capture you actively doing a task.</li>
+    <li>Submit your video in the app &mdash; once it clears a quick quality check, payment lands in your account.</li>
   </ul>
   <h2>Get set up in 3 steps</h2>
   <p style="color:var(--muted);font-size:15px;">You can do all of this from home, before your first shift. Takes about 10 minutes.</p>
@@ -101,7 +99,7 @@
     <div class="num">2</div>
     <div>
       <h3>Download the Instawork Lens app</h3>
-      <p>Lens is where you record, submit clips, and track your time. It works with the camera headset you'll use on shift.</p>
+      <p>Lens is where you record, submit videos, and track your time. It works with the camera headset you'll use on shift.</p>
       <a class="btn" href="https://apps.apple.com/us/app/instawork-lens/id6753125272">Download Lens</a>
     </div>
   </div>
@@ -122,11 +120,11 @@
   </div>
   <div class="faq">
     <h3>When do I get paid?</h3>
-    <p>After your clip clears a quick quality review &mdash; in days, not weeks. You earn $20 for every hour of usable footage.</p>
+    <p>After your video clears a quick quality review &mdash; in days, not weeks. You earn $20 for every hour of usable footage. Videos must show active hands-on work to qualify &mdash; driving or idle time does not count toward your hour.</p>
   </div>
   <div class="faq">
     <h3>What do I record?</h3>
-    <p>Your normal work. After a manager okays it, you start the camera and go about your shift.</p>
+    <p>Your normal work &mdash; cooking, stocking, cleaning, packing, or any hands-on task. After a manager okays it, you start the camera and go about your shift.</p>
   </div>
   <div class="faq">
     <h3>Is this a regular job?</h3>
@@ -140,30 +138,31 @@
   <footer>
     <p>Instawork Robotics Lab &middot; Powered by Instawork</p>
   </footer>
-<div style="margin-top:40px;border-top:1px solid var(--line);padding-top:32px;">
-  <h2>All set up? Let us know</h2>
-  <p style="color:var(--muted);font-size:15px;">Once you've completed all three steps above, tap below so we know you're ready to record.</p>
-  <form action="https://formspree.io/f/xkoebeld" method="POST">
-    <input type="hidden" name="referring_pro" id="completion_referring_pro" value="">
-    <label for="comp_name">Your name <span class="req">*</span></label>
-    <input id="comp_name" type="text" name="nominee_name" placeholder="First and last name" required>
-    <label for="comp_phone">Your phone <span class="req">*</span></label>
-    <input id="comp_phone" type="tel" name="nominee_phone" placeholder="(555) 555-5555" required>
-    <label for="comp_market">Your market <span class="req">*</span></label>
-    <select id="comp_market" name="market" required>
-      <option value="" disabled selected>Select your market</option>
-      <option value="Dallas">Dallas</option>
-      <option value="Las Vegas">Las Vegas</option>
-    </select>
-    <button class="btn" type="submit" style="margin-top:18px;">I'm all set up</button>
-    <p class="micro">We'll confirm you're cleared to start recording.</p>
-  </form>
-</div>
-<script>
-  const urlParams = new URLSearchParams(window.location.search);
-  const refPro = urlParams.get('referring_pro') || '';
-  document.getElementById('completion_referring_pro').value = refPro;
-</script>
+  <div style="margin-top:40px;border-top:1px solid var(--line);padding-top:32px;">
+    <h2>All set up? Let us know</h2>
+    <p style="color:var(--muted);font-size:15px;">Once you've completed all three steps above, tap below so we know you're ready to record.</p>
+    <form action="https://formspree.io/f/xkoebeld" method="POST">
+      <input type="hidden" name="referring_pro" id="completion_referring_pro" value="">
+      <label for="comp_name">Your name <span class="req">*</span></label>
+      <input id="comp_name" type="text" name="nominee_name" placeholder="First and last name" required>
+      <label for="comp_phone">Your phone <span class="req">*</span></label>
+      <input id="comp_phone" type="tel" name="nominee_phone" placeholder="(555) 555-5555" required>
+      <label for="comp_market">Your market <span class="req">*</span></label>
+      <select id="comp_market" name="market" required>
+        <option value="" disabled selected>Select your market</option>
+        <option value="Dallas">Dallas</option>
+        <option value="Las Vegas">Las Vegas</option>
+      </select>
+      <button class="btn" type="submit" style="margin-top:18px;">I'm all set up</button>
+      <p class="micro">We'll confirm you're cleared to start recording.</p>
+    </form>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const refPro = urlParams.get('referring_pro') || '';
+    document.getElementById('completion_referring_pro').value = refPro;
+  </script>
 </div>
 </body>
 </html>
+ 
