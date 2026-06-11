@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instawork Robotics Lab — for business owners</title>
+<style>
+  :root{
+    --bg:#0e1116;
+    --card:#171c24;
+    --card-2:#1f2630;
+    --text:#f3f5f8;
+    --muted:#a7b0bd;
+    --accent:#3b82f6;
+    --accent-press:#2f6fd6;
+    --line:#2a323d;
+    --good:#34d399;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.5;}
+  .wrap{max-width:520px;margin:0 auto;padding:24px 20px 56px;}
+  header{padding:8px 0 18px;}
+  .kicker{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 8px;}
+  h1{font-size:27px;line-height:1.22;margin:0 0 12px;font-weight:800;letter-spacing:-.01em;}
+  .lede{font-size:16px;color:var(--muted);margin:0;}
+  h2{font-size:19px;margin:30px 0 10px;font-weight:800;letter-spacing:-.01em;}
+  h3{font-size:16px;font-weight:700;margin:14px 0 4px;}
+  p{font-size:16px;margin:0 0 14px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;}
+  .deal{background:linear-gradient(160deg,#16263a,#171c24);border:1px solid #29445f;}
+  .deal .big{font-size:38px;font-weight:800;margin:0;letter-spacing:-.03em;color:var(--good);line-height:1.1;}
+  .deal .biglede{font-size:15px;color:var(--muted);margin:4px 0 16px;}
+  .deal h3{margin-top:14px;}
+  .deal h3:first-of-type{margin-top:6px;}
+  .deal p{font-size:15px;color:var(--muted);margin:0 0 0;}
+  ul.clean{list-style:none;padding:0;margin:6px 0 0;}
+  ul.clean li{position:relative;padding:10px 0 10px 28px;color:var(--text);font-size:15px;border-bottom:1px solid var(--line);}
+  ul.clean li:last-child{border-bottom:0;}
+  ul.clean li::before{content:"";position:absolute;left:2px;top:16px;width:9px;height:9px;border-radius:50%;background:var(--good);}
+  ul.bullets{list-style:none;padding:0;margin:6px 0 0;}
+  ul.bullets li{position:relative;padding:8px 0 8px 26px;color:var(--muted);font-size:15px;border-bottom:1px solid var(--line);}
+  ul.bullets li:last-child{border-bottom:0;}
+  ul.bullets li::before{content:"";position:absolute;left:2px;top:14px;width:8px;height:8px;border-radius:50%;background:var(--accent);}
+  /* form */
+  form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px;margin-top:8px;}
+  label{display:block;font-size:14px;font-weight:700;margin:14px 0 6px;}
+  label:first-of-type{margin-top:0;}
+  .req{color:var(--accent);}
+  input[type=text],input[type=tel],input[type=email],select{width:100%;background:#0f141b;border:1px solid var(--line);
+    border-radius:12px;padding:13px 14px;color:var(--text);font-size:16px;}
+  input::placeholder{color:#5d6775;}
+  fieldset{border:0;padding:0;margin:14px 0 0;}
+  legend{font-size:14px;font-weight:700;margin-bottom:8px;padding:0;}
+  .opt{display:flex;align-items:center;gap:12px;background:#0f141b;border:1px solid var(--line);
+    border-radius:12px;padding:13px 14px;margin:8px 0;font-size:15px;cursor:pointer;}
+  .opt input{width:20px;height:20px;accent-color:var(--accent);}
+  .btn{display:block;width:100%;text-align:center;background:var(--accent);color:#fff;border:0;
+    text-decoration:none;font-weight:700;font-size:17px;padding:15px 18px;border-radius:14px;margin:18px 0 0;cursor:pointer;}
+  .btn:active{background:var(--accent-press);}
+  .micro{font-size:13px;color:#6c7682;margin:10px 0 0;text-align:center;}
+  footer{margin-top:32px;color:#6c7682;font-size:13px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">Instawork Robotics Lab</p>
+    <h1>$500 to your business, $20/hr to your worker &mdash; for a few hours of training footage.</h1>
+    <p class="lede">Two minutes to read. We pay you, we pay the worker, we bring the gear. You don't change anything about how the shift runs.</p>
+  </header>
+ 
+  <h2>What this is</h2>
+  <p>Instawork Robotics Lab (IRL) collects real-world point-of-view footage of work getting done &mdash; restaurants, warehouses, retail, hotels &mdash; to train AI and robotics. A worker wears our lightweight camera gear (under 3 lbs total, designed to be non-intrusive) during a normal shift and submits the footage to us. Nothing to install. Nothing to change about how you run the floor.</p>
+ 
+  <h2>What we pay</h2>
+  <div class="card deal">
+    <p class="big">$500</p>
+    <p class="biglede">to your business the first time your worker records usable footage &mdash; plus $20/hr to the worker, and $500 for every other business you refer.</p>
+ 
+    <h3>$500 to your business</h3>
+    <p>Paid after the first shift where your worker records usable footage. No upfront cost, no catch &mdash; you get it once the footage is in.</p>
+ 
+    <h3>$20/hr to the worker</h3>
+    <p>Separately, we pay the person wearing the camera $20 for every hour of usable footage. IW pro or your own employee &mdash; either works. They don't give up any hours or income to participate.</p>
+ 
+    <h3>$500 for every business you refer</h3>
+    <p>Know another owner whose team does hands-on work? When they sign on and their first shift records usable footage, we send you $500 &mdash; no cap on how many you refer.</p>
+  </div>
+ 
+  <h2>What you do</h2>
+  <ul class="clean">
+    <li>Sign our short, standard agreement (about 5 minutes &mdash; link below).</li>
+    <li>Tell us which areas, if any, are off-limits for recording.</li>
+    <li>Let the worker wear our gear during a normal shift.</li>
+    <li>That's it. You don't change anything else about how the shift runs.</li>
+  </ul>
+ 
+  <h2>Why it's low risk</h2>
+  <ul class="bullets">
+    <li>No equipment to install &mdash; we ship our gear directly to the worker.</li>
+    <li>One short, standard agreement &mdash; not negotiated, no surprises, takes about 5 minutes to sign.</li>
+    <li>No minimums, no schedule. Start with one shift. Stop anytime.</li>
+    <li>The worker &mdash; not us &mdash; is on-site. No outside vendors in your space.</li>
+    <li>The gear captures the worker's point of view, not a security feed. You decide what's off-limits.</li>
+    <li>The worker starts and stops recording themselves and can pause anytime.</li>
+  </ul>
+ 
+  <h2>What we're after</h2>
+  <p>Ordinary work, done normally. Plating an order. Bussing a table. Picking inventory. Restocking a shelf. Checking in a guest. The mundane is the useful part &mdash; that's what we need to train on.</p>
+ 
+  <h2>Ready to start? Sign the agreement</h2>
+  <p style="color:var(--muted);font-size:15px;">Short, standard, about 5 minutes. Once it's signed, we'll get the gear out to your worker.</p>
+  <a class="btn" href="https://form.jotform.com/261525599664067" style="margin:8px 0 26px;">Sign the agreement &rarr;</a>
+ 
+  <h2>Not ready to sign yet? Tell us about your business</h2>
+  <p style="color:var(--muted);font-size:15px;">About 30 seconds. We'll reach out within one business day to answer questions.</p>
+  <form action="https://formspree.io/f/xjgzrllj" method="post">
+    <input type="hidden" name="lead_source" value="cold_outreach">
+    <input type="hidden" name="referring_pro" value="">
+ 
+    <label for="biz">Business name <span class="req">*</span></label>
+    <input id="biz" type="text" name="business_name" placeholder="e.g. Sunrise Diner" required>
+ 
+    <label for="biztype">Business type <span style="color:#6c7682;font-weight:600;">(optional)</span></label>
+    <select id="biztype" name="business_type">
+      <option value="">Select a type</option>
+      <option>Restaurant</option>
+      <option>Retail</option>
+      <option>Warehouse</option>
+      <option>Hotel</option>
+      <option>Hospitality / Events</option>
+      <option>Other</option>
+    </select>
+ 
+    <label for="mgr">Your name <span class="req">*</span></label>
+    <input id="mgr" type="text" name="manager_name" placeholder="First and last name" required>
+ 
+    <label for="role">Your role <span style="color:#6c7682;font-weight:600;">(optional)</span></label>
+    <input id="role" type="text" name="manager_role" placeholder="e.g. Owner, GM, Manager">
+ 
+    <label for="phone">Your phone <span class="req">*</span></label>
+    <input id="phone" type="tel" name="manager_phone" placeholder="(555) 555-5555" required>
+ 
+    <label for="email">Your email <span class="req">*</span></label>
+    <input id="email" type="email" name="manager_email" placeholder="you@business.com" required>
+ 
+    <fieldset>
+      <legend>Where you're at <span class="req">*</span></legend>
+      <label class="opt"><input type="radio" name="status" value="yes" required> I'm interested &mdash; let's set up a call</label>
+      <label class="opt"><input type="radio" name="status" value="open"> Open to it &mdash; happy to learn more</label>
+      <label class="opt"><input type="radio" name="status" value="questions"> Have a few questions first</label>
+    </fieldset>
+ 
+    <button class="btn" type="submit">Send</button>
+    <p class="micro">We'll only use this to follow up about IRL.</p>
+  </form>
+ 
+  <footer>
+    <p>Instawork Robotics Lab &middot; Powered by Instawork</p>
+  </footer>
+</div>
+</body>
+</html>
